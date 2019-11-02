@@ -54,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="zlU-tY-dvH" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="120" id="zlU-tY-dvH" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zlU-tY-dvH" id="oWG-lK-znu">
@@ -74,8 +74,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XI-6V-IYj">
-                                            <rect key="frame" x="72" y="33" width="287" height="87"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XI-6V-IYj">
+                                            <rect key="frame" x="72" y="33" width="303" height="87"/>
                                             <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -86,6 +86,8 @@
                                         <constraint firstItem="5XI-6V-IYj" firstAttribute="leading" secondItem="iDJ-qg-UDw" secondAttribute="trailing" constant="8" id="7fN-ti-fKF"/>
                                         <constraint firstItem="LXr-YI-Ia4" firstAttribute="top" secondItem="oWG-lK-znu" secondAttribute="topMargin" id="E4d-sd-gjZ"/>
                                         <constraint firstItem="LXr-YI-Ia4" firstAttribute="leading" secondItem="iDJ-qg-UDw" secondAttribute="trailing" constant="8" id="Ndo-Rk-7nE"/>
+                                        <constraint firstAttribute="bottom" secondItem="5XI-6V-IYj" secondAttribute="bottom" id="loz-LY-GDE"/>
+                                        <constraint firstAttribute="trailing" secondItem="5XI-6V-IYj" secondAttribute="trailing" id="mXY-fh-vKa"/>
                                         <constraint firstItem="iDJ-qg-UDw" firstAttribute="leading" secondItem="oWG-lK-znu" secondAttribute="leading" id="ryN-sZ-bTB"/>
                                         <constraint firstItem="iDJ-qg-UDw" firstAttribute="top" secondItem="oWG-lK-znu" secondAttribute="top" id="tuJ-MI-iPP"/>
                                     </constraints>
