@@ -46,7 +46,7 @@ class TweetCellTableViewCell: UITableViewCell {
             favoriteButton.setImage(UIImage(named: "favor_icon_red"), for: UIControl.State.normal)
         }
         else{
-            self.favoriteButton.setImage(UIImage(named: "favor_icon"), for: UIControl.State.normal)
+            favoriteButton.setImage(UIImage(named: "favor_icon"), for: UIControl.State.normal)
         }
     }
     
